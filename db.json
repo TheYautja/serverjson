@@ -17,7 +17,36 @@
       "nome": "Fone de Ouvido Bluetooth",
       "preco": 450,
       "categoria": "Acessórios"
+    },
+    {
+      "id": "4",
+      "nome": "kayron",
+      "preco": 99999,
+      "categoria": "bicho"
+    },
+      {
+      "id": "5",
+      "nome": "Fone de fio",
+      "preco": 450,
+      "categoria": "Acessórios"
+    },
+      {
+      "id": "6",
+      "nome": "Fone",
+      "preco": 450,
+      "categoria": "Acessórios"
+    },
+      {
+      "id": "7",
+      "nome": "Ouvido",
+      "preco": 450,
+      "categoria": "Acessórios"
+    },
+      {
+      "id": "8",
+      "nome": "Bluetooth",
+      "preco": 450,
+      "categoria": "Acessórios"
     }
-
   ]
 }

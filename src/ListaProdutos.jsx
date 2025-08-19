@@ -22,22 +22,22 @@ export default function ListaProdutos() {
     if (!novoProduto) return;
 
 
-    axios.post("http://localhost:3001/produtos", { nome: novoProduto, preco: 0, categoria: "Indefinida" })
+    axios.post("http://localhost:3001/produtos", { nome: novoProduto, preco: 0, categoria: "nao sei" })
       .then(res => {
         console.log("foi", res.data);
         setNovoProduto("");
       })
-      .catch(err => console.error("Deu pau postando", err));
+      .catch(err => console.error("Deu pau", err));
   }
 
 
   return (
 
 
-    <div className="p-6">
+    <div>
 
 
-      <h1 className="text-3xl font-bold mb-6 text-center text-blue-600">Lista de Produtos</h1>
+      <h1 className="text-3xl font-bold mb-6 text-center text-black-600">loja do salsicha</h1>
       <div className="mb-6 flex gap-2 justify-center">
         <input
           type="text"
@@ -48,7 +48,7 @@ export default function ListaProdutos() {
         />
         <button
           onClick={adicionarProduto}
-          className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          className="bg-blue-500 text-white px-4 py-2 rounded"
         >
           add produto
         </button>
@@ -56,7 +56,7 @@ export default function ListaProdutos() {
 
 
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div className="flex flex-col gap-4">
         {produtos.map(prod => (
           <div key={prod.id} className="border rounded p-4 shadow hover:shadow-lg transition">
 
